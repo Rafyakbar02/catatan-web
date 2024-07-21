@@ -4,7 +4,7 @@ A simple note taking web application written in Typescript. This project is made
 ## Features
 - **Text Formatting**: Heading, Bold, Italic, Underline, Strikethrough
 - **Undo/Redo**: Full support for undo and redo operations
-- **Keyboard Shortcuts**: Common shortcuts for text formatting **(Work in progress)** 
+- **Keyboard Shortcuts**: Common shortcuts for text formatting
 - **Lists**: Ordered and Unordered lists
 
 ## Getting Started
