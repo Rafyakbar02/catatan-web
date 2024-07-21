@@ -2,10 +2,10 @@
 A simple note taking web application written in Typescript. This project is made possible using [Tiptap](https://tiptap.dev/) open source content editor and [shadcn/ui](https://ui.shadcn.com/) component library. The aim is to provide a small and intuitive text editor for web applications, with wide support of formatting options. This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Features
-- **Text Formatting**: Bold, Italic, Underline, Strikethrough
+- **Text Formatting**: Heading, Bold, Italic, Underline, Strikethrough
 - **Undo/Redo**: Full support for undo and redo operations
 - **Keyboard Shortcuts**: Common shortcuts for text formatting **(Work in progress)** 
-- **Lists**: Ordered and Unordered lists **(Work in progress)** 
+- **Lists**: Ordered and Unordered lists
 
 ## Getting Started
 
