@@ -1,7 +1,7 @@
 "use client"
 
 import { type Editor } from "@tiptap/react"
-import { Bold, Strikethrough, Italic, List, ListOrdered, Heading2 } from "lucide-react"
+import { Bold, Strikethrough, Italic, List, ListOrdered, Heading2, Heading1 } from "lucide-react"
 
 import { Toggle } from "./ui/toggle"
 
@@ -16,7 +16,17 @@ export function Toolbar({ editor }: Props) {
 
     return (
         <div className="fixed mx-auto inset-x-0 max-w-fit border border-input bg-white rounded-3xl px-4 py-2">
-            {/* Header toggle */}
+            {/* Header 1 toggle */}
+            <Toggle
+                pressed={editor.isActive("heading", { level: 1 })}
+                onPressedChange={() =>
+                    editor.chain().focus().toggleHeading({ level: 1 }).run()
+                }
+            >
+                <Heading1 className="h-5 w-5" />
+            </Toggle>
+
+            {/* Header 2 toggle */}
             <Toggle
                 pressed={editor.isActive("heading", { level: 2 })}
                 onPressedChange={() =>

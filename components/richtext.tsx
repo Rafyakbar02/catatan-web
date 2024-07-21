@@ -8,7 +8,11 @@ import { Toolbar } from "./toolbar"
 export default function RichText() {
     const editor = useEditor({
         extensions: [
-            StarterKit,
+            StarterKit.configure({
+                heading: {
+                    levels: [1, 2]
+                }
+            }),
             PlaceHolder.configure({
                 emptyEditorClass:
                     'cursor-text before:content-[attr(data-placeholder)] before:absolute before:top-2 before:left-3 before:text-mauve-11 before:opacity-50 before-pointer-events-none',
