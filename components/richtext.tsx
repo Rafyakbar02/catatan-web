@@ -20,7 +20,7 @@ export default function RichText() {
         ],
         editorProps: {
             attributes: {
-                class: "outline-none border-none h-[800px] px-3 py-2 flex-1 mt-16 prose max-w-none [&_ol]:list-decimal [&_ul]:list-disc"
+                class: "outline-none border-none px-3 py-2 flex-1 mt-16 prose max-w-none [&_ol]:list-decimal [&_ul]:list-disc"
             }
         }
     })
