@@ -18,7 +18,7 @@ export function Toolbar({ editor }: Props) {
         <div className="fixed mx-auto inset-x-0 max-w-fit border border-input bg-white rounded-3xl px-4 py-2">
             {/* Header toggle */}
             <Toggle
-                pressed={editor.isActive("heading")}
+                pressed={editor.isActive("heading", { level: 2 })}
                 onPressedChange={() =>
                     editor.chain().focus().toggleHeading({ level: 2 }).run()
                 }
@@ -58,7 +58,7 @@ export function Toolbar({ editor }: Props) {
 
             {/* Bullet list toggle */}
             <Toggle
-                pressed={editor.isActive("bulletlist")}
+                pressed={editor.isActive("bulletList")}
                 onPressedChange={() =>
                     editor.chain().focus().toggleBulletList().run()
                 }
@@ -68,7 +68,7 @@ export function Toolbar({ editor }: Props) {
 
             {/* Ordered list toggle */}
             <Toggle
-                pressed={editor.isActive("orderedlist")}
+                pressed={editor.isActive("orderedList")}
                 onPressedChange={() =>
                     editor.chain().focus().toggleOrderedList().run()
                 }
